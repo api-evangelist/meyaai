@@ -1,7 +1,13 @@
 aid: meyaai
 name: Meya.ai
-description: Meya.ai is a company surfaced as a portfolio company of 500-global and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Meya is a chatbot and CX-automation platform for building, coding, and launching customer-support
+  conversational apps, digital assistants, and workflow automation. Developers use the Grid platform
+  and Console to script flows in BFML (a YAML syntax with Jinja2 templating) and Python 3 with async
+  I/O, embed the Meya Orb chat UI on web and mobile, and connect messaging, support, NLU, and analytics
+  integrations (WhatsApp, Facebook Messenger, Twilio, Zendesk, Front, Salesforce, Dialogflow, Wit.ai,
+  Segment). The platform exposes an HTTP gateway for inbound integration/API webhooks, a first-party
+  Meya CLI for local development with live push, and the Orb SDKs for web, Flutter, and iOS.
 url: https://raw.githubusercontent.com/api-evangelist/meyaai/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,12 +15,40 @@ x-backed-by:
 - 500-global
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
+image: https://files.readme.io/0187488-small-meya-wordmark.png
 tags:
 - Company
-apis: []
+- Chatbots
+- Conversational AI
+- Customer Support
+- CX Automation
+- Messaging
+- Webhooks
+- Developer Platform
+apis:
+- name: Meya Grid Gateway
+  description: >-
+    The Meya Grid HTTP gateway that receives inbound integration and API/webhook events for a Meya app.
+    Webhook URLs follow the format https://grid.meya.ai/gateway/v2/{integration}/{app_id}/{dot_path}.
+  humanURL: https://docs.meya.ai/
+  baseURL: https://grid.meya.ai
+  properties:
+  - type: Webhooks
+    url: asyncapi/meyaai-webhooks.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
@@ -23,3 +57,40 @@ maintainers:
 common:
 - type: Website
   url: https://meya.ai
+- type: Documentation
+  url: https://docs.meya.ai/
+- type: DeveloperPortal
+  url: https://docs.meya.ai/
+- type: APIReference
+  url: https://docs.meya.ai/reference
+- type: Blog
+  url: https://www.meya.ai/blog
+- type: GitHubOrganization
+  url: https://github.com/meya-customers
+- type: SignUp
+  url: https://www.meya.ai/article/sign-up
+- type: StatusPage
+  url: https://meya-v2.statuspage.io/
+- type: ChangeLog
+  url: https://docs.meya.ai/docs/changelog
+- type: LLMsTxt
+  url: llms/meyaai-llms.txt
+- type: Packages
+  url: packages/meyaai-packages.yml
+- type: SDKs
+  url: packages/meyaai-packages.yml
+- type: CLI
+  url: cli/meyaai-cli.yml
+- type: Components
+  url: components/meyaai-components.yml
+- type: Webhooks
+  url: asyncapi/meyaai-webhooks.yml
+- type: Lifecycle
+  url: lifecycle/meyaai-lifecycle.yml
+- type: DomainSecurity
+  url: security/meyaai-domain-security.yml
+x-enrichment:
+  date: '2026-07-20'
+  status: enriched
+  artifacts_added: 8
+  pass: local-v1
