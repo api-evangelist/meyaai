@@ -1,0 +1,50 @@
+generated: '2026-07-20'
+method: searched
+source: https://docs.meya.ai/docs/changelog
+scheme: dated release versions (Grid platform vMAJOR.MINOR.PATCH)
+current_version: v2.9.1
+also_at: https://updates.meya.ai/
+entries:
+- version: v2.9.1
+  date: '2026-05-21'
+  breaking: false
+  highlights:
+  - Fixed multi-rating selection to preserve the score and paint the active selected state.
+  - Multi-rating scores now reach the Orb client correctly.
+- version: v2.9.0
+  date: '2026-05-20'
+  breaking: false
+  highlights:
+  - Added orbConfig.mode to lock the Orb Web layout to fullscreen or floating.
+  - Added the multi-rating widget for collecting multiple ratings in a single block.
+  - Added the date picker field widget for Orb Web, with page support.
+  - Added comment_html_body to the Zendesk Support ticket components for rich HTML comments.
+  - Fixed a GraphQL int32 overflow in ledger log pagination queries.
+- version: v2.8.8
+  date: '2024-12-11'
+  breaking: false
+  highlights:
+  - Bug fix for image attachments sent from Zendesk Support; render inline images correctly.
+  - Added rehost_media option to make Twilio media accessible to Zendesk agents.
+- version: v2.8.7
+  date: '2024-10-01'
+  breaking: false
+  highlights:
+  - Miscellaneous bug fixes.
+- version: v2.8.6
+  date: '2024-06-27'
+  breaking: false
+  highlights:
+  - Support max_attachment_size on Orb Web JavaScript client and Zendesk Support integration.
+  - Increased max attachment size to 256MB (up from 64MB).
+- version: v2.8.5
+  date: '2024-05-29'
+  breaking: false
+  highlights:
+  - Fixed a race condition on extra_buttons for Orb Web.
+- version: v2.8.4
+  date: '2024-04-12'
+  breaking: false
+  highlights:
+  - Support character_limit (and multi-line input) in the Orb Web composer.
+  - Support an upload progress bar in the composer while files/photos upload.

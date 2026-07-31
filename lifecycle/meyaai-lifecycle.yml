@@ -1,0 +1,17 @@
+generated: '2026-07-20'
+method: searched
+source: https://docs.meya.ai/docs/changelog + https://meya-v2.statuspage.io/
+versioning:
+  scheme: dated-release
+  current: v2.9.1
+  docs: https://docs.meya.ai/docs/changelog
+deprecation:
+  policy_url: null
+  sunset_header: false
+  notes: No formal deprecation/Sunset-header policy published; changes are announced in the dated changelog.
+sla:
+  url: null
+  uptime_target: null
+status_page: https://meya-v2.statuspage.io/
+changelog: https://docs.meya.ai/docs/changelog
+updates_feed: https://updates.meya.ai/

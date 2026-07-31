@@ -1,0 +1,34 @@
+generated: '2026-07-20'
+method: searched
+source: https://docs.meya.ai/docs/meya-cli
+name: meya
+summary: First-party command-line tool for managing Meya bots/apps locally with live updates to the hosted Grid platform.
+binary: meya
+package: pypi:meya
+install:
+- method: pip
+  command: pip install meya
+  notes: Install into a Python 3 virtual environment (python3 -m venv venv).
+- method: system-deps
+  command: brew install python@3 libgit2
+  notes: macOS system prerequisites (Python 3 and libgit2) before installing the meya package.
+commands:
+- name: auth
+  command: meya auth
+  description: Authenticate the CLI against your Meya account.
+- name: clone
+  command: meya clone
+  description: Clone a Meya app's source down for local development.
+- name: connect
+  command: meya connect
+  description: Connect the local working copy to a Meya app on the Grid platform.
+- name: push
+  command: meya push
+  description: Push local app changes live to the Meya Grid platform.
+- name: vault
+  command: meya vault
+  description: Manage encrypted secrets/vault values for a Meya app.
+- name: webhooks
+  command: meya webhooks
+  description: List the integration webhook URLs for the current Meya app.
+docs: https://docs.meya.ai/docs/meya-cli

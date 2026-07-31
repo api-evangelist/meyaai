@@ -1,0 +1,28 @@
+generated: '2026-07-20'
+method: searched
+source: https://docs.meya.ai + https://github.com/meya-customers
+summary: Meya Orb is the provider's embeddable conversational UI — a mobile and web chat surface with rich widgets (buttons, text input, multiple choice, tiles, markdown, ratings, date pickers).
+families:
+- name: Orb Web
+  kind: embeddable-web-chat
+  description: JavaScript web chat client embedded on a website; configurable via orbConfig (e.g. fullscreen/floating mode, composer character limits, upload progress).
+  loader: Meya Orb Web JavaScript client
+  docs: https://docs.meya.ai/docs/orb-config
+- name: Orb Mobile
+  kind: mobile-chat-sdk
+  description: Flutter/Dart SDK for embedding the Orb chat UI in mobile apps.
+  loader: orb-sdk (Dart)
+  source: https://github.com/meya-customers/orb-sdk
+- name: Orb iOS
+  kind: mobile-chat-sdk
+  description: iOS distribution of the Orb SDK via CocoaPods.
+  loader: orb-cocoapods
+  source: https://github.com/meya-customers/orb-cocoapods
+widgets:
+- buttons
+- text input
+- multiple choice
+- tiles
+- markdown
+- multi-rating
+- date picker

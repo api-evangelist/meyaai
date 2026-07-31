@@ -1,0 +1,31 @@
+generated: '2026-07-20'
+method: searched
+source: https://github.com/meya-customers + https://pypi.org/project/meya/
+packages:
+- language: python
+  registry: pypi
+  name: meya
+  url: https://pypi.org/project/meya/
+  install: pip install meya
+  version: 1.0.6
+  official: true
+  description: Manage Meya bots from the command-line (Meya CLI + Python helpers) with live updates to meya.ai.
+- language: python
+  registry: github
+  name: meya-sdk
+  url: https://github.com/meya-customers/meya-sdk
+  install: git clone https://github.com/meya-customers/meya-sdk
+  official: true
+  description: The Meya SDK — elements, entries, and Python helpers for the Meya chatbot platform.
+- language: dart
+  registry: github
+  name: orb-sdk
+  url: https://github.com/meya-customers/orb-sdk
+  official: true
+  description: Orb mobile SDK (Flutter/Dart) for embedding the Meya Orb chat UI in mobile apps.
+- language: swift
+  registry: github
+  name: orb-cocoapods
+  url: https://github.com/meya-customers/orb-cocoapods
+  official: true
+  description: CocoaPods distribution repository for the Orb iOS SDK.

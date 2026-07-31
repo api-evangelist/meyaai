@@ -1,0 +1,28 @@
+generated: '2026-07-20'
+method: searched
+source: https://docs.meya.ai/docs/webhooks + https://docs.meya.ai/docs/how-to-set-up-an-api-webhook-integration
+spec_type: Webhooks
+summary: >-
+  Meya receives inbound events from third-party platforms through its Grid gateway. When an
+  integration is added to a Meya app, a webhook is automatically created so the integration can
+  receive messages/events. Webhook URLs follow a standard per-integration format on the gateway
+  host; they are retrieved with the Meya CLI (`meya webhooks`) or the Meya Console.
+gateway_host: https://grid.meya.ai
+webhook_format: https://grid.meya.ai/gateway/v2/{INTEGRATION_NAME}/{APP_ID}/{INTEGRATION_DOT_PATH}
+generic_api_webhook: https://grid.meya.ai/gateway/v2/webhook/{APP_ID}/{INTEGRATION_DOT_PATH}
+retrieval:
+- method: cli
+  command: meya webhooks
+- method: console
+  notes: Webhook URLs follow the standard gateway format shown in the Console.
+example_integrations:
+- name: webhook
+  description: Generic API & Webhook integration for custom inbound HTTP events.
+  url: https://grid.meya.ai/gateway/v2/webhook/{APP_ID}/{INTEGRATION_DOT_PATH}
+- name: alexa
+  url: https://grid.meya.ai/gateway/v2/alexa/{APP_ID}/{INTEGRATION_DOT_PATH}
+- name: calendly
+  url: https://grid.meya.ai/gateway/v2/calendly/{APP_ID}/{INTEGRATION_DOT_PATH}
+- name: clearbit
+  url: https://grid.meya.ai/gateway/v2/clearbit/{APP_ID}/{INTEGRATION_DOT_PATH}
+docs: https://docs.meya.ai/docs/webhooks
