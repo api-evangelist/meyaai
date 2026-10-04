@@ -45,7 +45,7 @@ tags:
 - Company
 - Chatbots
 - Conversational AI
-- Customer-Support
+- Customer Support
 - CX Automation
 - Messaging
 - Webhook
@@ -59,6 +59,7 @@ tags_raw:
 - Messaging
 - Webhooks
 - Developer Platform
+- Customer-Support
 apis:
 - name: Meya Grid Gateway
   description: >-
